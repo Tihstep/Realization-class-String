@@ -288,10 +288,12 @@ int main()
 {
     String b("hello ");
     String a("world");
-    String c("zz.djscdl kfvslk");
-    cout << ("world" == a);
-    cout << c[1];
-    c[1] = 's';
-    cout << c[1];
+    String c("O.V,ya ne hochu na zachet,poshadite");
+    
+    cout << (b += a) << endl;
+    cout << c.Get_Last_Word() << endl;
+    cout << (a > b) << endl;
+    cout << b.Length() << endl;
+    cout << c.Check_substring("poshadite");
     return 0;
 }
